@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+.hero {
+  height: 100vh;
+  background: url('assets/bg.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+}
+
+.overlay p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: #00b4d8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0077b6;
+}
+
+.content-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.video-container iframe,
+.map-container iframe {
+  width: 90%;
+  max-width: 600px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.login-box button {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-box .back-btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
